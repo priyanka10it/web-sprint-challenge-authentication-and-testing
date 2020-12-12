@@ -25,9 +25,20 @@ We will hash the user's password using `bcryptjs`, and use JSON Web Tokens and t
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+
+Ans.JSON web tokens are stateless because claims are stored client-side, rather than in the server's memory. Authentication can occur locally, instead of per request, where requests have to go through the server's database, or similar locations.
+
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+
+Ans.The bcrypt hashing function allows us to build a password security platform that scales with computation power and always hashes every password with a salt.
+
 3. How are unit tests different from integration and end-to-end testing?
+
+Ans.Unlike end-to-end tests that rely on external components, unit tests are not flaky. ... They have one major advantage over unit tests: they ensure that modules which work well in isolation, also play well together. Integration tests typically focus on a small number of modules and test their interactions.
+
 4. How does _Test Driven Development_ change the way we write applications and tests?
+
+Ans.Test-driven development (TDD) is a software development process relying on software ... This is a differentiating feature of test-driven development versus writing unit ... It helps ensure that the application is written for testability, as the developers ... the code and the unit tests he writes will both be wrong in the same way.
 
 You are expected to be able to answer questions in these areas.
 
